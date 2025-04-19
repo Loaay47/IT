@@ -4,26 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link href="styles.css" rel="stylesheet">
     <link id="theme-style" rel="stylesheet" href="css/theme-light.css">
+    <link href="images/favicon.png" rel="icon">
     <title>The Egyptian Museum</title>
 
-    <select onchange="switchTheme(this.value)">
-        <option value="theme-light">Light Theme</option>
-        <option value="theme-dark">Dark Theme</option>
-    </select>
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="search.html">Search</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="tickets.html">Tickets</a>
-        <a href="login.html" id="login-link">Login</a>
-        <a href="#" id="logout-link" style="display:none;">Logout</a>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="search.html">Search</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="login.html" id="login-link">Login</a>
+                <a href="#" id="logout-link" style="display:none;">Logout</a>
+            </ul>
+            <select onchange="switchTheme(this.value)">
+                <option value="theme-light">Light</option>
+                <option value="theme-dark">Dark</option>
+            </select>
+        </nav>
+    </header>
+    <main>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Egyptian Museum.</p>
+    </footer>
 </body>
 
 </html>

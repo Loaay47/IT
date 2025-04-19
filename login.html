@@ -1,45 +1,39 @@
-<!-- Login File -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Egyptian Museum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/theme-dark.css" id="theme-style" />
+    <script src="js/validation.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    <link href="images/favicon.png" rel="icon">
 </head>
 
-<body>
-    <header>
-        <h1>Login to the Egyptian Museum</h1>
-        <nav>
-            <ul class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="register.html">Sign Up</a>
-            </ul>
-        </nav>
-    </header>
+<body class="dark-theme">
+    <div class="container">
+        <main>
+            <section class="form-container">
+                <form name="userForm" onsubmit="return validateForm(event)">
 
-    <main>
-        <section class="form-container">
-            <form id="loginForm" onsubmit="return validateLogin()">
-                <label for="email">Email:</label>
-                <input autocomplete="off" placeholder="Email" type="email" id="email" required>
-                <label for="password">Password:</label>
-                <input id="password" placeholder="Password" type="password" required>
-                <button type="submit">Log in</button>
-                <p class="message">Don't have an account? <a href="register.html">Sign Up</a></p>
-            </form>
-        </section>
-    </main>
-    <div id="error-msg"></div>
+                    <label for="email">Email:</label>
+                    <input placeholder="Email" type="email" name="email" required>
 
-    <footer>
-        <p>&copy; 2025 Egyptian Museum.</p>
-    </footer>
-    <script scr="js/validation.js"></script>
-    <script src="js/theme.js"></script>
+                    <label for="password">Password:</label>
+                    <input name="password" placeholder="Password" type="password" required>
+
+                    <button type="submit">Log in</button>
+                    <p class="message">Don't have an account? <a href="register.html">Sign Up</a></p>
+                </form>
+            </section>
+        </main>
+        <img src="images/login-register image.jpg" alt="login-image" class="login-image">
+        <footer>
+            <p>&copy; 2025 Egyptian Museum.</p>
+        </footer>
+    </div>
 </body>
 
 </html>
