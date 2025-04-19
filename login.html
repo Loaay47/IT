@@ -1,13 +1,45 @@
+<!-- Login File -->
 <!DOCTYPE html>
 <html>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Egyptian Museum</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/theme-dark.css" id="theme-style" />
+</head>
+
 <body>
-    <form onsubmit="return validateLogin()">
-        <input autocomplete="off" placeholder="Email" type="email" id="email">
-        <input id="password" placeholder="Password" type="password" required>
-        <button type="submit">Log in</button>
-    </form>
+    <header>
+        <h1>Login to the Egyptian Museum</h1>
+        <nav>
+            <ul class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="register.html">Sign Up</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <form id="loginForm" onsubmit="return validateLogin()">
+                <label for="email">Email:</label>
+                <input autocomplete="off" placeholder="Email" type="email" id="email" required>
+                <label for="password">Password:</label>
+                <input id="password" placeholder="Password" type="password" required>
+                <button type="submit">Log in</button>
+                <p class="message">Don't have an account? <a href="register.html">Sign Up</a></p>
+            </form>
+        </section>
+    </main>
     <div id="error-msg"></div>
+
+    <footer>
+        <p>&copy; 2025 Egyptian Museum.</p>
+    </footer>
+    <script scr="js/validation.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 
 </html>
