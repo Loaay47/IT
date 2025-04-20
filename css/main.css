@@ -63,6 +63,11 @@ body {
     animation: fadeSlideInLeft 1s ease-out 0.2s both;
 }
 
+.description {
+    text-align: center;
+    margin-left: 10px;
+}
+
 main img {
     animation: fadeSlideInRight 1s ease-out 0.4s both;
 }
@@ -75,9 +80,31 @@ main {
     gap: 2rem;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.logo-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
 form {
     display: flex;
     flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: 500;
 }
 
 form input {
@@ -102,10 +129,10 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-    padding: 12px;
+    padding: 50px;
     background-color: #b69f2e;
     color: #121212;
-    border: none;
+    border-color: white;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
@@ -113,6 +140,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #9a8623;
+    border-color: white;
 }
 
 button {
@@ -122,11 +150,6 @@ button {
     padding: 10px 20px;
     font-size: 17px;
     border-radius: 5px;
-}
-
-button:hover {
-    background-color: #b69f2e;
-    color: #121212;
 }
 
 h1 {
@@ -171,18 +194,29 @@ main img {
 .form-container input {
     padding: 0.5rem;
     border-radius: 5px;
-    border: none;
+    border: 2px solid #ccc;
     margin-bottom: 0.5rem;
 }
 
+.form-container input:hover,
+.form-container input:focus {
+    border-color: gold;
+    outline: none;
+}
+
 .form-container button {
-    margin-top: 1rem;
-    padding: 0.7rem;
+    margin-top: 20px;
+    padding: 12px;
     background-color: #d4af37;
-    color: #000;
+    color: black;
     border: none;
+    border-color: #d4af37;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #8f792b;
 }
 
 .message {
