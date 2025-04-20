@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
     <title>Register - Egyptian Museum</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/theme-dark.css" id="theme-style" />
     <link href="images/favicon.png" rel="icon">
     <script src="js/validation.js"></script>
     <script src="js/theme.js"></script>
@@ -16,7 +15,7 @@
 <body>
     <main>
         <section class="form-container">
-            <form id="registerForm" onsubmit="return validateForm(event)">
+            <form id="registerForm" onsubmit="return validateRegister(event)">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required />
 
@@ -32,6 +31,8 @@
                 <button type="submit">Register</button>
                 <p class="message">Already have an account? <a href="login.html">Login</a></p>
             </form>
+            <div id="loginMessage" class="success-box"></div>
+            <div id="ErrorMessage" class="error-box"></div>
         </section>
         <img src="images/login-register image.jpg" alt="login-image" class="login-image">
     </main>

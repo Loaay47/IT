@@ -16,7 +16,7 @@
     <div class="container">
         <main>
             <section class="form-container">
-                <form name="userForm" onsubmit="return validateForm(event)">
+                <form name="userForm" onsubmit="return validateLogin(event)">
 
                     <label for="email">Email:</label>
                     <input placeholder="Email" type="email" name="email" required>
@@ -27,6 +27,8 @@
                     <button type="submit">Log in</button>
                     <p class="message">Don't have an account? <a href="register.html">Sign Up</a></p>
                 </form>
+                <div id="loginMessage" class="success-box"></div>
+                <div id="ErrorMessage" class="error-box"></div>
             </section>
         </main>
         <img src="images/login-register image.jpg" alt="login-image" class="login-image">

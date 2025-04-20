@@ -39,6 +39,26 @@ body {
     }
 }
 
+.error-box {
+    display: none;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.success-box {
+    display: none;
+    padding: 10px;
+    color: white;
+    background-color: #4CAF50;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
 .form-container {
     animation: fadeSlideInLeft 1s ease-out 0.2s both;
 }
@@ -121,6 +141,12 @@ main img {
     box-shadow: 0 0 15px #00000088;
     min-width: 300px;
     height: auto;
+}
+
+.navbar {
+    padding: 10px;
+    max-width: 400px;
+    color: white;
 }
 
 .form-container {
