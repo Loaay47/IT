@@ -4,237 +4,72 @@ body {
     color: #f4f4f4;
     margin: 0;
     padding: 0;
-}
-
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #1c1c1c;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-@keyframes fadeSlideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeSlideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.error-box {
-    display: none;
-    padding: 10px;
-    color: white;
-    background-color: red;
-    margin-top: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.success-box {
-    display: none;
-    padding: 10px;
-    color: white;
-    background-color: #4CAF50;
-    margin-top: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.form-container {
-    animation: fadeSlideInLeft 1s ease-out 0.2s both;
-}
-
-.description {
-    text-align: center;
-    margin-left: 10px;
-}
-
-main img {
-    animation: fadeSlideInRight 1s ease-out 0.4s both;
-}
-
-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 25px;
-}
-
-.logo-icon {
-    width: 24px;
-    height: 24px;
-}
-
-.logo span {
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-form {
-    display: flex;
     flex-direction: column;
+    display: flex;
+    min-height: 100vh;
 }
 
-form label {
-    margin: 10px 0 5px;
-    font-weight: 500;
-}
-
-form input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    font-size: 1em;
-    background-color: #2e2e2e;
-    color: #f0d083;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-    padding: 12px;
-    font-size: 16px;
-    border: 1px solid #444;
-    border-radius: 5px;
-    background-color: #333;
-    color: #f4f4f4;
-}
-
-input[type="submit"] {
-    padding: 50px;
-    background-color: #b69f2e;
-    color: #121212;
-    border-color: white;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #9a8623;
-    border-color: white;
-}
-
-button {
-    background-color: transparent;
-    border: 1px solid #b69f2e;
-    color: #b69f2e;
+.menu {
+    display: flex;
+    gap: 20px;
+    background-color: #222;
     padding: 10px 20px;
-    font-size: 17px;
-    border-radius: 5px;
+    align-items: center;
 }
 
-h1 {
-    text-align: center;
-    color: #b69f2e;
-}
-
-main img {
-    flex: 1;
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 15px #00000088;
-    min-width: 300px;
-    height: auto;
-}
-
-.navbar {
-    padding: 10px;
-    max-width: 400px;
+.menu a,
+.menu .dropbtn {
     color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
 }
 
-.form-container {
-    max-width: 400px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #111;
-    border-radius: 10px;
-    color: #fff;
+.menu a:hover,
+.menu .dropbtn:hover {
+    background-color: gold;
+    color: #222;
 }
 
-.form-container form {
+.dropdown {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
-.form-container label {
-    margin-top: 1rem;
-    margin-bottom: 0.3rem;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 4px;
 }
 
-.form-container input {
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: 2px solid #ccc;
-    margin-bottom: 0.5rem;
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
 }
 
-.form-container input:hover,
-.form-container input:focus {
-    border-color: gold;
-    outline: none;
+.dropdown-content a:hover {
+    background-color: gold;
+    color: #222;
 }
 
-.form-container button {
-    margin-top: 20px;
-    padding: 12px;
-    background-color: #d4af37;
-    color: black;
-    border: none;
-    border-color: #d4af37;
-    border-radius: 5px;
-    cursor: pointer;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-.form-container button:hover {
-    background-color: #8f792b;
-}
-
-.message {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-}
-
-.dark-theme {
-    background-color: #121212;
-    color: #f4f4f4;
-}
-
-.light-theme {
-    background-color: #fff;
-    color: #333;
-}
 
 footer {
-    bottom: auto;
-    padding: 15px;
+    padding: 1rem;
+    margin-top: auto;
+    text-align: center;
+    background-color: #222;
+    color: #eee;
 }
