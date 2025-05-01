@@ -6,8 +6,12 @@
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link id="theme-style" rel="stylesheet" href="css/theme-light.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="images/favicon.png" rel="icon">
     <title>The Egyptian Museum</title>
 
@@ -17,7 +21,10 @@
     <header class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img src="images/favicon.png" alt="The Egyptian Museum" />
+                <a href="index.html">
+                    <img src="images/favicon.png" alt="The Egyptian Museum" />
+                </a>
+
             </div>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
@@ -35,40 +42,132 @@
             </nav>
         </div>
     </header>
-
-
     <main>
-        <section class="hero" id="home">
-            <div class="hero-text">
-                <h2>Explore Egypt's Timeless Treasures</h2>
-                <p>Discover the beauty of ancient civilization.</p>
-                <a href="#exhibitions" class="cta-button">Explore Now</a>
-            </div>
-        </section>
 
-        <section class="highlights" id="exhibitions">
-            <h2>Featured Exhibitions</h2>
-            <div class="highlight-grid">
-                <div class="highlight-item">
-                    <img src="images/pharaoh.jpg" alt="Pharaoh">
-                    <h3>Pharaoh’s Legacy</h3>
+        <!-- Title -->
+        <div class="title_home">
+            <img src="images/entrance_wide.jpg" alt="Entrace wide" />
+            <div class="title_text_overlay">
+                <h2>The Egyptian History In One Place</h2>
+                <h1>The Egyptian Museum in Cairo (EMC)</h1>
+            </div>
+        </div>
+        <div class="intro_section">
+            <div class="intro_text">
+                <h3>Welcome to the Egyptian Museum in Cairo<span> (EMC)</span></h3>
+                <h2>Discover the world's largest collection of Egyptian antiquities</h2>
+                <p>The Egyptian Museum in Cairo <span>(EMC)</span> is the oldest archaeological museum in the Middle
+                    East, housing
+                    over
+                    170,000 artefacts. It has the largest collection of Pharaonic antiquities in the world.</p>
+                <p>The Museum's exhibits span the Pre-Dyanstic Period till the Graeco-Roman Era (c. 5500 BC - AD
+                    364)
+                </p>
+            </div>
+            <div class="intro-image-section">
+                <img src="images/statue.jpg" alt="statue holding cane">
+            </div>
+        </div>
+        <!-- Achievements -->
+        <div class="achievements-section">
+            <div class="overlay">
+                <div class="achievement-boxes">
+                    <div class="box">
+                        <p>More than</p>
+                        <h2>100</h2>
+                        <p>Exhibition<br>Galleries</p>
+                    </div>
+                    <div class="box">
+                        <p>More than</p>
+                        <h2>10,000</h2>
+                        <p>Sq. Meter Area</p>
+                    </div>
+                    <div class="box">
+                        <p>More than</p>
+                        <h2>100,000</h2>
+                        <p>Masterpieces</p>
+                    </div>
+                    <div class="box">
+                        <p>More than</p>
+                        <h2>100,000,000</h2>
+                        <p>Visitors since<br>opening</p>
+                    </div>
                 </div>
-                <div class="highlight-item">
-                    <img src="images/mummies.jpg" alt="Mummies">
-                    <h3>Hall of Mummies</h3>
+                <h2 class="bottom-text">More than just a Museum</h2>
+            </div>
+        </div>
+        <!-- History -->
+        <div class="history">
+            <h1>The Egyptian Museum</h1>
+            <h2>Since 1902</h2>
+            <div class="history-gallery">
+                <div class="cornerstone">
+                    <img src="images/cornerstone-egyptian-museum-cairo-emc.jpeg" alt="cornerstone">
+                    <p>Isis Keystone being hoisted above the main entrance of the Egyptian Museum</p>
                 </div>
-                <div class="highlight-item">
-                    <img src="images/treasures.jpg" alt="Treasures">
-                    <h3>Golden Treasures</h3>
+                <div id="original-draw">
+                    <img src="images/Museum-original-draw.jpg">
+                    <p>Original drawing of the museum</p>
+                    <p class="desc">Designed by the French architect Marcel Dourgnon, and built by the Italian
+                        companyowned by Giuseppe Garozzo and Francesco Zaffrani...</p>
+                    <div class="history-button">
+                        <a href="history.html" target="_blank">
+                            <button>Discover the Museum's History</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="marcel-dourgnon">
+                    <img src="images/Dourgnon-em.jpg">
+                    <p>Architect Marcel Dourgnon</p>
                 </div>
             </div>
-        </section>
+        </div>
+        <!-- Avenue -->
+        <div class="avenue">
+            <div class="avenue-image" onclick="openVideo()">
+                <img src="images/Avenue.jpg" alt="Avenue of Sphinxes">
+                <i class="fas fa-play-circle play-icon"></i>
+            </div>
+
+            <div class="avenue-text">
+                <h1>Avenue of Sphinxes Ceremony</h1>
+                <p class="date">25 November 2021</p>
+                <p>Watch the wondrous celebration from the land of Pharaohs</p>
+                <a href="https://www.youtube.com/watch?v=9NZ57JsXJKs&ab_channel=Ministry_Tourism_Antiquities%D9%88%D8%B2%D8%A7%D8%B1%D8%A9%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9%D9%88%D8%A7%D9%84%D8%A2%D8%AB%D8%A7%D8%B1"
+                    onclick="openVideo(); return false;">Watch the full video</a>
+            </div>
+        </div>
+
+        <!-- Small YouTube Preview -->
+        <div id="videoPopup" class="popup">
+            <div class="popup-content small">
+                <span class="close" onclick="closeVideo()">&times;</span>
+                <iframe id="videoFrame" src="" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+            </div>
+        </div>
+        <!-- Social media -->
+        <div class="social-media-bottom">
+            <p class="follow-text">Follow us</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/EgyptianMuseumCairo/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/egyptianmuseumincairo/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/egyptianmuseumc" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+
     </main>
-
     <footer>
         <p>&copy; 2025 Egyptian Museum.</p>
     </footer>
     <script src="js/validation.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
