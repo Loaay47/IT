@@ -465,3 +465,13 @@ footer {
     background-color: #222;
     color: #eee;
 }
+
+body,
+.nav-links a ,
+.history-button a button,
+.avenue-text a ,
+.play-icon ,
+.social-icons a ,
+footer {
+cursor: url(/IT/images/7orus_crusor.png) 0 0 , auto;
+}
