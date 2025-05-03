@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/favicon.png" alt="The Egyptian Museum" />
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#">Gallery</a>
+                    <div class="dropdown-content">
+                        <a href="photos.html">Photos</a>
+                        <a href="videos.html">Videos</a>
+                    </div>
+                </div>
+                <a href="tickets.html">Tickets</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="login.html" id="login-link">Login</a>
+                <a href="#" id="logout-link" style="display:none;">Logout</a>
+            </nav>
+        </div>
+    </header>
+<main>
+<section>
+    <div class="contact-container">
+        <form action="/submit-form" method="post" class="contact-form">
+             <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Send" class="submit-btn">
+        </form>
+    </div>
+</section>
+
+
+<!-- Google Maps -->
+<section>
+    <div class="map-container">
+        <div class="headers">
+        <h2>Find Us Here</h2>
+        <h3>Our Location:</h3>
+     </div>
+       
+ 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.0042177656034!2d31.233516275415864!3d30.0477079749156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840c33e0b7f5b%3A0x121ac20f0ac409db!2sThe%20Egyptian%20Museum!5e0!3m2!1sen!2seg!4v1681651312345!5m2!1sen!2seg" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+<!-- about us -->
+<section class="about-link-section">
+    <div class="headers">
+      <h2>Want to Know More About Us?</h2>
+      <p>Discover the story behind the museum, our mission, and the treasures we protect.</p>
+      <a href="about.html" class="about-btn">About Us</a>
+    </div>
+  </section>
+  
+</main>
+
+<footer>
+    <p style="text-align:center;">&copy; 2025 The Egyptian Museum.</p>
+  </footer>
+      
+</body>
+</html>
