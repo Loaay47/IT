@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Forum', serif;
+    background-color: #000;
+    color: gold;
+}
+
+header {
+    background-color: #111;
+    color: gold;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #fff;
+}
+
+.events-background {
+    background-image: url('https://assets.onecompiler.app/4378cjwvz/43gd2yuux/pexels-axp-photography-500641970-18991559.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+.events-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 60px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: gold;
+}
+
+.events-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: gold;
+}
+
+.event {
+    margin-bottom: 40px;
+}
+
+.event h3 {
+    font-size: 1.8em;
+    color: #f9d342;
+}
+
+footer {
+    background-color: #111;
+    color: gold;
+    text-align: center;
+    padding: 15px 0;
+}
