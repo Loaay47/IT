@@ -23,39 +23,70 @@ body {
   background-image: radial-gradient(circle at 50% 0%, #111111 0%, #000000 100%);
 }
 
-header {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 20px;
-  text-align: center;
-  border-bottom: 2px solid var(--accent-color);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  box-shadow: 0 4px 15px var(--glow-color);
+.navbar {
+  background-color: #111;
+  position: relative;
+  z-index: 1000;
 }
 
-nav {
-  margin-top: 10px;
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
 }
 
-nav a {
-  margin: 0 12px;
-  color: var(--secondary-color);
+.logo img {
+  height: 80px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #f5f5f5;
+  font-size: 18px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+  position: relative;
+  padding: 8px 0;
+  transition: color 0.3s;
 }
 
-nav a:hover {
-  color: var(--accent-color);
-  text-shadow: 0 0 6px var(--accent-color);
+.nav-links a:hover {
+  color: #e0c060;
 }
 
-nav a.active {
-  text-decoration: underline;
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #222;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #f5f5f5;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+  color: #e0c060;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 main {
@@ -67,11 +98,12 @@ main {
 
 .timeline-intro {
   text-align: center;
-  margin-bottom: 60px;
-  margin-top: 60px;
-  padding: 0 40px;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  padding: 80px;
   animation: fadeIn 1.5s ease-in-out;
-  background-image: url('../Images/history0.jpg');
+  background-image: url('../images/history0.jpg');
+  height: 600px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

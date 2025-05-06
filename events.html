@@ -5,22 +5,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events - Egyptian Museum</title>
-    <link rel="stylesheet" href="../CSS/events.css" />
+    <link rel="stylesheet" href="css/events.css" />
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Egyptian Museum - Events</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="tickets.html">Tickets</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="events.html" class="active">Events</a></li>
-            </ul>
-        </nav>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/favicon.png" alt="The Egyptian Museum" />
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#">About EMC</a>
+                    <div class="dropdown-content">
+                        <a href="history.html">History</a>
+                        <a href="events.html">Events</a>
+                    </div>
+                </div>
+                <a href="tickets.html">Tickets</a>
+                <a href="about.html">About us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="login.html" id="login-link">Login</a>
+                <a href="#" id="logout-link" style="display:none;">Logout</a>
+            </nav>
+        </div>
     </header>
 
     <div class="events-background">
@@ -68,6 +80,8 @@
     <footer>
         <p>&copy; 2025 Egyptian Museum. All rights reserved.</p>
     </footer>
+    <script src="js/validation.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

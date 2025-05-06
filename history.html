@@ -5,20 +5,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>History - Egyptian Museum</title>
-  <link rel="stylesheet" href="../CSS/history.css" />
+  <link rel="stylesheet" href="css/history.css" />
+  <link href="images/favicon.png" rel="icon">
   <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1>History of the Egyptian Museum</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="tickets.html">Tickets</a>
-      <a href="history.html" class="active">History</a>
-      <a href="events.html">Events</a>
-    </nav>
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/favicon.png" alt="The Egyptian Museum" />
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <a href="#">About EMC</a>
+          <div class="dropdown-content">
+            <a href="history.html">History</a>
+            <a href="events.html">Events</a>
+          </div>
+        </div>
+        <a href="tickets.html">Tickets</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html" id="login-link">Login</a>
+        <a href="#" id="logout-link" style="display:none;">Logout</a>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -41,7 +56,7 @@
             unauthorized exports. The move demonstrated a growing awareness of the importance of cultural preservation
             and laid the groundwork for future institutions dedicated to Egyptology.</p>
         </div>
-        <img src="../Images/history1.jpg" alt="Early efforts in Egyptian antiquities preservation">
+        <img src="images/history1.jpg" alt="Early efforts in Egyptian antiquities preservation">
       </div>
 
       <!-- 1858 -->
@@ -55,7 +70,7 @@
             discoveries, reflecting Mariette's dedication to collecting and preserving Egypt's antiquities within the
             country.</p>
         </div>
-        <img src="../Images/history2.jpg" alt="Auguste Mariette, founder of the Antiquities Department">
+        <img src="images/history2.jpg" alt="Auguste Mariette, founder of the Antiquities Department">
       </div>
 
       <!-- 1878 -->
@@ -67,7 +82,7 @@
             suitable facility to house Egypt's invaluable artifacts. The event catalyzed discussions and plans for
             relocating the museum to a safer environment, ensuring better protection for the nation's heritage.</p>
         </div>
-        <img src="../Images/history3.jpg" alt="Nile flood affecting Bulaq Museum">
+        <img src="images/history3.jpg" alt="Nile flood affecting Bulaq Museum">
       </div>
 
       <!-- 1891 -->
@@ -79,7 +94,7 @@
             better organization and display. The Giza location served as an interim solution while plans for a permanent
             museum building were developed, reflecting the ongoing commitment to preserving Egypt's antiquities.</p>
         </div>
-        <img src="../Images/history4.jpg" alt="Giza Palace housing the museum's collection">
+        <img src="images/history4.jpg" alt="Giza Palace housing the museum's collection">
       </div>
 
       <!-- 1902 -->
@@ -92,7 +107,7 @@
             North Africa, symbolizing a significant advancement in the preservation and exhibition of ancient artifacts.
           </p>
         </div>
-        <img src="../Images/history5.jpg" alt="Egyptian Museum in Tahrir Square">
+        <img src="images/history5.jpg" alt="Egyptian Museum in Tahrir Square">
       </div>
 
       <!-- 1922 -->
@@ -104,7 +119,7 @@
             significantly enhancing its collection. This event captivated the world and solidified the museum's status
             as a premier institution for Egyptology, attracting scholars and tourists alike.</p>
         </div>
-        <img src="../Images/history6.jpg" alt="Tutankhamun's golden mask">
+        <img src="images/history6.jpg" alt="Tutankhamun's golden mask">
       </div>
 
       <!-- 1954 -->
@@ -116,7 +131,7 @@
             the evolving urban landscape of Cairo. Despite these changes, the museum continued to adapt and maintain its
             role as a guardian of Egypt's ancient heritage.</p>
         </div>
-        <img src="../Images/history7.jpg" alt="Cairo Municipality Building adjacent to the museum">
+        <img src="images/history7.jpg" alt="Cairo Municipality Building adjacent to the museum">
       </div>
 
       <!-- 2004 -->
@@ -128,7 +143,7 @@
             modernization. Under her guidance, the museum undertook various initiatives to enhance its exhibitions and
             educational programs, aiming to engage a broader audience and promote cultural understanding.</p>
         </div>
-        <img src="../Images/history8.jpg" alt="Wafaa El Saddik, first female director general">
+        <img src="images/history8.jpg" alt="Wafaa El Saddik, first female director general">
       </div>
 
       <!-- 2011 -->
@@ -141,7 +156,7 @@
             Restoration efforts were promptly initiated, and by 2013, many of the damaged items were recovered and
             displayed in a special exhibition titled "Damaged and Restored."</p>
         </div>
-        <img src="../Images/history9.jpg" alt="Damage to the museum during the 2011 revolution">
+        <img src="images/history9.jpg" alt="Damage to the museum during the 2011 revolution">
       </div>
 
       <!-- 2021 -->
@@ -154,7 +169,7 @@
             legacies. The event garnered international attention and highlighted the museum's ongoing relevance in the
             cultural landscape.</p>
         </div>
-        <img src="../Images/history10.jpg" alt="Pharaohs' Golden Parade transporting royal mummies">
+        <img src="images/history10.jpg" alt="Pharaohs' Golden Parade transporting royal mummies">
       </div>
 
       <!-- Present -->
@@ -167,14 +182,16 @@
             Egyptian Museum in Tahrir Square remains a symbol of the nation's enduring connection to its ancient past.
           </p>
         </div>
-        <img src="../Images/history11.jpg" alt="Interior of the Egyptian Museum showcasing artifacts">
+        <img src="images/history11.jpg" alt="Interior of the Egyptian Museum showcasing artifacts">
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Egyptian Museum Project | Created for IT Class</p>
+    <p>© 2025 Egyptian Museum Project</p>
   </footer>
+  <script src="js/validation.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
