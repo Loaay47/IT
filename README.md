@@ -44,8 +44,8 @@ IT-project
 
 - HTML5
 - CSS
-- Java Script
+- JavaScript
 
 ## 🤝 Contributing
 
-- Special thanks to all the members and the contributes for making that happened.
+- Special thanks to all the members and the contributes for making that happen.
