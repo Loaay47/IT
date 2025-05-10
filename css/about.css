@@ -18,7 +18,9 @@ body {
   color: var(--text-color);
   font-family: var(--font-family);
   line-height: 1.6;
-  height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
+
 }
 
 .navbar {
@@ -88,7 +90,7 @@ body {
 }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
   padding: 100px 40px 40px 40px;
   background-image: url('../Images/pexels-lina-3989816.jpg');
   background-size: cover;
@@ -96,7 +98,6 @@ main {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -116,31 +117,60 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
-  text-align: center;
+  text-align: left;
+  justify-items: center;
+
 }
 
 .member {
+  max-width: 220px;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: left;
   position: relative;
   overflow: hidden;
-  padding: 1rem;
-  transition: transform 0.3s ease;
- max-width: 220px; 
-    margin: 0 auto;
-    text-align: center;
 }
 
 .member img {
-
   width: 100%;
-  border-radius: 8px;
+  border-radius: 20px;
   object-fit: cover;
+  transition: transform 0.4s ease;
+  border: 3px solid transparent; 
+}
+
+.member .role {
+  font-size: 1rem;
+  transition: opacity 0.6s ease;
+}
+.member img:hover {
+  transform: scale(1.1);
+  border: 3px solid #FFA500;
 }
 
 .member h3 {
-
   margin: 0.5rem 0 0.2rem;
   font-size: 1.1rem;
 }
+.member .dream {
+  opacity: 0;
+  color: gold;
+  transition: opacity 0.6s ease;
+}
+
+.member:hover .dream {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
 
 h1,
 h2 {
