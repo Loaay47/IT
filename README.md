@@ -10,11 +10,25 @@ git clone git@github.com:Loaay47/IT.git
 2. Open `index.html` in your browser
 3. Explore the different sections and features
 
-## 🌟 Features
+## 🌐 Website Preview
 
-- **Elegant Design**: Dark theme with gold accents, inspired by ancient Egyptian aesthetics
-- **Interactive Elements**: Smooth animations and hover effects
-- **Modern UI/UX**: Clean and intuitive user interface
+### 🏛️ **Elegant Design**  
+Dark theme with gold accents, inspired by ancient Egyptian aesthetics.
+
+![Team](images/home.png)
+---
+### 🔁 **Interactive Elements**  
+Smooth animations and hover effects to enhance user experience.
+
+![Team](images/history.png)
+---
+
+### 💡 **Modern UI/UX**  
+Clean and intuitive user interface for easy navigation.
+
+![Team](images/login.png)
+
+---
 
 ## 📁 Project Structure
 
@@ -49,3 +63,4 @@ IT-project
 ## 🤝 Contributing
 
 - Special thanks to all the members and the contributes for making that happen.
+![Team](images/about.png)
