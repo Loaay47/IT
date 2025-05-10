@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: 'Georgia', sans-serif;
+    font-family: 'Playfair Display SC', serif;
     background-color: #222;
     color: #f4f4f4;
     margin: 0;
@@ -60,6 +60,7 @@ body {
     color: #e0c060;
     transform: scale(1.1);
     transition: transform 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 .dropdown {
@@ -98,6 +99,9 @@ body {
     width: 100%;
     height: 85vh;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .title_home img {
@@ -105,12 +109,11 @@ body {
     height: 100%;
     object-fit: cover;
     filter: brightness(0.7);
-    transform: scale(1.1);
     transition: transform 0.5s ease;
 }
 
 .title_home:hover img {
-    transform: scale(1);
+    transform: scale(1.05);
 }
 
 .title_text_overlay {
@@ -172,6 +175,16 @@ body {
     }
 }
 
+.title_text_overlay h1 {
+    margin: 20px 0;
+    font-size: 3.5em;
+}
+
+.title_text_overlay h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
 /* Intro section */
 .intro_section {
     display: flex;
@@ -205,6 +218,8 @@ body {
 }
 
 .intro_text h3 {
+    font-weight: bold;
+    text-align: center;
     font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -642,4 +657,174 @@ footer {
     text-align: center;
     background-color: #222;
     color: #eee;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    animation: bounce 2s infinite;
+}
+
+.scroll-indicator span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.scroll-indicator i {
+    font-size: 1.5rem;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Image Overlay and Zoom Button */
+.intro-image-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-image-section:hover .image-overlay {
+    opacity: 1;
+}
+
+.zoom-btn {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.zoom-btn:hover {
+    transform: scale(1.1);
+}
+
+.zoom-btn i {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+/* Image Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: #e0c060;
+}
+
+/* Enhanced Box Animations */
+.box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced Navigation */
+.nav-links a {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e0c060;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    transform: translateX(0);
+}
+
+/* Responsive Design Improvements */
+@media (max-width: 768px) {
+    .intro_section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .achievement-boxes {
+        gap: 20px;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .history-gallery>div {
+        min-width: 100%;
+    }
 }
