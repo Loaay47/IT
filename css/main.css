@@ -22,6 +22,10 @@ body {
     animation: SiteEntrance 1s ease-in-out forwards;
 }
 
+p {
+    font-family: 'Lato', sans-serif;
+}
+
 .navbar {
     background-color: #111;
     position: relative;
@@ -156,7 +160,8 @@ body {
 }
 
 .title_text_overlay p {
-    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
     margin-top: 20px;
     opacity: 0;
     transform: translateY(20px);
@@ -248,7 +253,7 @@ body {
 }
 
 .intro_text p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.8;
     margin-bottom: 1.5em;
     color: #ccc;
@@ -345,7 +350,8 @@ body {
 }
 
 .box p {
-    font-size: 1.1em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
     margin: 10px 0;
     color: #d4af37;
 }
@@ -455,14 +461,14 @@ body {
 
 .history-gallery p {
     padding: 20px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.6;
     color: #fff;
     margin: 0;
 }
 
 .history-gallery .desc {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     color: #d4af37;
     padding: 0 20px 20px;
