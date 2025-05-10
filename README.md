@@ -7,8 +7,8 @@ A modern website for the Egyptian Museum, featuring a rich cultural experience w
 ```
 git clone git@github.com:Loaay47/IT.git
 ```
-3. Open `index.html` in your browser
-4. Explore the different sections and features
+2. Open `index.html` in your browser
+3. Explore the different sections and features
 
 ## 🌟 Features
 
@@ -19,11 +19,25 @@ git clone git@github.com:Loaay47/IT.git
 ## 📁 Project Structure
 
 ```
-├── css/
-│   ├── main.css      # Main stylesheet
-│   └── tickets.css   # Ticket page specific styles
-├── images/           # Image assets
-└── index.html        # Main page
+IT-project
+├── index.html
+├── css
+│   ├── about.css
+│   ├── events.css
+│   ├── history.css
+│   ├── login.css
+│   ├── main.css
+│   ├── style.css
+│   └── tickets.css
+├── js
+│   └── validation.js
+├── about.html
+├── events.html
+├── history.html
+├── login.html
+├── register.html
+├── tickets.html
+└── README.md
 ```
 
 ## 🛠️ Technologies Used
@@ -31,32 +45,6 @@ git clone git@github.com:Loaay47/IT.git
 - HTML5
 - CSS
 - Java Script
-
-
-
-
-## 🎯 Key Features
-
-1. **Hero Section**
-   - Full-width image display
-   - Elegant text overlay
-   - Smooth hover animations
-
-2. **Navigation**
-   - Responsive navbar
-   - Dropdown menus
-   - Smooth transitions
-
-3. **Ticket System**
-   - Clean ticket information display
-   - Interactive ticket sections
-   - Responsive pricing tables
-
-4. **Gallery**
-   - Grid layout for artifacts
-   - Image hover effects
-   - Modal view for detailed images
-
 
 ## 🤝 Contributing
 
